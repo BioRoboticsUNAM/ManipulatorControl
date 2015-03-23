@@ -172,14 +172,12 @@ namespace ManipulatorControl
 		{
 			if (!this.leftPredefMovs.ContainsKey(movement))
 			{
-				TextBoxStreamWriter.DefaultLog.WriteLine("TaskPlanner: Can't find predefined movement for left arm : \"" +
-					movement + "\"");
+				TextBoxStreamWriter.DefaultLog.WriteLine("TaskPlanner: Can't find predefined movement for left arm : \"" + movement + "\"");
 				return false;
 			}
 			if (!this.rightPredefMovs.ContainsKey(movement))
 			{
-				TextBoxStreamWriter.DefaultLog.WriteLine("TaskPlanner: Can't find predefined movement for right arm : \"" +
-					movement + "\"");
+				TextBoxStreamWriter.DefaultLog.WriteLine("TaskPlanner: Can't find predefined movement for right arm : \"" +	movement + "\"");
 				return false;
 			}
 

@@ -43,14 +43,14 @@ namespace ManipulatorControl
 				TextBoxStreamWriter.DefaultLog.WriteLine("Cmd ArmsMove: Arms busy executing another command");
 				return Response.CreateFromCommand(command, false);
 			}
-			//this.CommandManager.Busy = true;
-
+			
+            //this.CommandManager.Busy = true;
 			success = this.taskPlanner.ArmsMove(command.Parameters);
 
-			if (!this.taskPlanner.MovingLeftArm && !this.taskPlanner.MovingRightArm) this.CommandManager.Busy = false;
+			if (!this.taskPlanner.MovingLeftArm && !this.taskPlanner.MovingRightArm) 
+                this.CommandManager.Busy = false;
 
 			return Response.CreateFromCommand(command, success);
-
 		}
 
 		public override void DefaultParameterParser(string[] parameters)

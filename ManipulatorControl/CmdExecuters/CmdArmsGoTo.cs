@@ -36,7 +36,7 @@ namespace ManipulatorControl
 			if (!command.HasParams)
 			{
 				TextBoxStreamWriter.DefaultLog.WriteLine("Cmd ArmsGoTo: No parameters received");
-				return Response.CreateFromCommand(command, success);
+				return Response.CreateFromCommand(command, false);
 			}
 			if (this.taskPlanner.MovingRightArm || this.taskPlanner.MovingLeftArm)
 			{

@@ -137,3 +137,6 @@ C:\Users\Yisus\Documents\BioRobotica\Robocup\Arms\ManipulatorControl\Manipulator
 C:\Users\Yisus\Documents\BioRobotica\Robocup\Arms\ManipulatorControl\ManipulatorControl\obj\Release\ManipulatorControl.pdb
 Z:\RoboCup\SourceCode\BetaTest\ManipulatorControl\ManipulatorControl\obj\Release\ResGen.read.1.tlog
 Z:\RoboCup\SourceCode\BetaTest\ManipulatorControl\ManipulatorControl\obj\Release\ResGen.write.1.tlog
+D:\Justina Apps\Sources\Arms\ManipulatorControl\ManipulatorControl\bin\Release\ManipulatorControl.exe.config
+D:\Justina Apps\Sources\Arms\ManipulatorControl\ManipulatorControl\obj\Release\ManipulatorControl.exe
+D:\Justina Apps\Sources\Arms\ManipulatorControl\ManipulatorControl\obj\Release\ManipulatorControl.pdb
