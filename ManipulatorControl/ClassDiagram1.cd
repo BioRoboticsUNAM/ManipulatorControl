@@ -1,0 +1,374 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ManipulatorControl.ArmControlStatus" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAkQAAAAAIAQBAAAAAAACygACAwAAAIAAEAAAUAAEA=</HashCode>
+      <FileName>ArmControlStatus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ManipulatorControl.CmdArmsGoTo" Collapsed="true">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAABAAAAAAAABAAAAAAAAAACAAA=</HashCode>
+      <FileName>CmdExecuters\CmdArmsGoTo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ManipulatorControl.CmdArmsMove" Collapsed="true">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAABAAAAAAAABAAAAAAAAAACAAA=</HashCode>
+      <FileName>CmdExecuters\CmdArmsMove.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ManipulatorControl.CmdArmsState" Collapsed="true">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAABAAAAAAAABAAAAAAAAAACAAA=</HashCode>
+      <FileName>CmdExecuters\CmdArmsState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ManipulatorControl.CmdArmsTorque" Collapsed="true">
+    <Position X="12.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAABAAAAAAAABAAAAAAAAAACAAA=</HashCode>
+      <FileName>CmdExecuters\CmdArmsTorque.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ManipulatorControl.CmdGetVoltage" Collapsed="true">
+    <Position X="14" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAABAAAAAAAABAAAAAAAAAACAAA=</HashCode>
+      <FileName>CmdExecuters\CmdGetVoltage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ManipulatorControl.CmdHand" Collapsed="true">
+    <Position X="15.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABBAAAAAAABAAAAAAAAAACAAA=</HashCode>
+      <FileName>CmdExecuters\CmdHand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ManipulatorControl.CmdHandMove" Collapsed="true">
+    <Position X="5.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAABAAAAAAAABAAAAAAAAAACAAA=</HashCode>
+      <FileName>CmdExecuters\CmdHandMove.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ManipulatorControl.CmdLaAbsPos" Collapsed="true">
+    <Position X="7" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAABAAAAQAAAAAAAAABAAAgAAAABEACAABgCQACAAI=</HashCode>
+      <FileName>CmdExecuters\CmdLaAbsPos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ManipulatorControl.CmdLaArtPos" Collapsed="true">
+    <Position X="8.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAABAAAAAAgABAACAAAAAAACAAA=</HashCode>
+      <FileName>CmdExecuters\CmdLaArtPos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ManipulatorControl.CmdLaCloseGrip" Collapsed="true">
+    <Position X="10.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAABAAAAAAAABAAAAAAAAAACAAA=</HashCode>
+      <FileName>CmdExecuters\CmdLaCloseGrip.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ManipulatorControl.CmdLaGoTo" Collapsed="true">
+    <Position X="12.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAABAAAAAAAABAAAAAAAAAACAAA=</HashCode>
+      <FileName>CmdExecuters\CmdLaGoTo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ManipulatorControl.CmdLaMove" Collapsed="true">
+    <Position X="14" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAABAAAAAAAABAAAAAAAAAACAAA=</HashCode>
+      <FileName>CmdExecuters\CmdLaMove.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ManipulatorControl.CmdLaOpenGripper" Collapsed="true">
+    <Position X="15.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAABAAAAAAAABAAAAAAAAAACAAA=</HashCode>
+      <FileName>CmdExecuters\CmdLaOpenGripper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ManipulatorControl.CmdLaReachable" Collapsed="true">
+    <Position X="5.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAgBAAAAQAAAAAAAAAAAAAgAAAAAEACAABgAQAAAAA=</HashCode>
+      <FileName>CmdExecuters\CmdLaReachable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ManipulatorControl.CmdLaRelPos" Collapsed="true">
+    <Position X="7" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAABAAAAQAAAAAAAAABAAAgAAAAAEACAABgAQACAAA=</HashCode>
+      <FileName>CmdExecuters\CmdLaRelPos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ManipulatorControl.CmdLaState" Collapsed="true">
+    <Position X="8.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAABAAAAAAAABAAAAAAAAAACAAA=</HashCode>
+      <FileName>CmdExecuters\CmdLaState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ManipulatorControl.CmdLaTorque" Collapsed="true">
+    <Position X="10.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAABAAAAAAAABAAAAAAAAAACAAA=</HashCode>
+      <FileName>CmdExecuters\CmdLaTorque.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ManipulatorControl.CmdRaAbsPos" Collapsed="true">
+    <Position X="12.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAABAAAAQAAAAAAAAABAAAgAAAABEACAABgCQACAAI=</HashCode>
+      <FileName>CmdExecuters\CmdRaAbsPos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ManipulatorControl.CmdRaArtPos" Collapsed="true">
+    <Position X="14" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAABAAAAAAgABAACAAAAAAACAAA=</HashCode>
+      <FileName>CmdExecuters\CmdRaArtPos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ManipulatorControl.CmdRaCloseGrip" Collapsed="true">
+    <Position X="15.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAABAAAAAAAABAAAAAAAAAACAAA=</HashCode>
+      <FileName>CmdExecuters\CmdRaCloseGrip.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ManipulatorControl.CmdRaGoTo" Collapsed="true">
+    <Position X="5.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAABAAAAAAAABAAAAAAAAAACAAA=</HashCode>
+      <FileName>CmdExecuters\CmdRaGoTo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ManipulatorControl.CmdRaMove" Collapsed="true">
+    <Position X="7" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAABAAAAAAAABAAAAAAAAAACAAA=</HashCode>
+      <FileName>CmdExecuters\CmdRaMove.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ManipulatorControl.CmdRaOpenGripper" Collapsed="true">
+    <Position X="8.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAABAAAAAAAABAAAAAAAAAACAAA=</HashCode>
+      <FileName>CmdExecuters\CmdRaOpenGripper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ManipulatorControl.CmdRaReachable" Collapsed="true">
+    <Position X="10.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAgBAAAAQAAAAAAAAAAAAAgAAAAAEACAABgAQAAAAA=</HashCode>
+      <FileName>CmdExecuters\CmdRaReachable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ManipulatorControl.CmdRaRelPos" Collapsed="true">
+    <Position X="12.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAABAAAAQAAAAAAAAABAAAgAAAAAEACAABgAQACAAA=</HashCode>
+      <FileName>CmdExecuters\CmdRaRelPos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ManipulatorControl.CmdRaState" Collapsed="true">
+    <Position X="14" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAABAAAAAAAABAAAAAAAAAACAAA=</HashCode>
+      <FileName>CmdExecuters\CmdRaState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ManipulatorControl.CmdRaTorque" Collapsed="true">
+    <Position X="15.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAABAAAAAAAABAAAAAAAAAACAAA=</HashCode>
+      <FileName>CmdExecuters\CmdRaTorque.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ManipulatorControl.Drawable" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAABAAQKgQgQCAAIEQAAAAEEEAuABBAIgAAYBE=</HashCode>
+      <FileName>Drawable.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ManipulatorControl.frmArmsControl" Collapsed="true">
+    <Position X="5.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>jEggDgQA0CAgASUhqCCYExAiRSICKCARAFEugQAAKKQ=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ManipulatorControl.Manipulator" Collapsed="true">
+    <Position X="7" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAFABAAENICI0GAAC6BCAAHICgwIoHAFANA=</HashCode>
+      <FileName>Manipulator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ManipulatorControl.ManipulatorManager" Collapsed="true">
+    <Position X="8.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>KCSQzWAQMOTFIGCiqMTIAQjUgFBQzgwCXAAqIQAgwiU=</HashCode>
+      <FileName>ManipulatorManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ManipulatorControl.MapGoalPoint" Collapsed="true">
+    <Position X="10.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MapElements\MapGoalPoint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ManipulatorControl.MapNode" Collapsed="true">
+    <Position X="12.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MapElements\MapNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ManipulatorControl.MapObstacle" Collapsed="true">
+    <Position X="14" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MapElements\MapObstacle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ManipulatorControl.MapOptimalPath" Collapsed="true">
+    <Position X="15.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>MapElements\MapOptimalPath.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ManipulatorControl.PredefMovement" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAGgAkgEAAIAAAAAAAAAAMAAAAAAAAABA=</HashCode>
+      <FileName>MapElements\PredefMovement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ManipulatorControl.PredefPosition" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAQAAAAAGgEEgGAEAgAAgCQAAQAsECDAACIAaRE=</HashCode>
+      <FileName>MapElements\PredefPosition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ManipulatorControl.Program" Collapsed="true">
+    <Position X="5.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ManipulatorControl.DualServoControl" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ARLIgADQQABBASDAgNDBABhAAEAlCkAImCjAiAAAZAQ=</HashCode>
+      <FileName>ServoControl\DualServoControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ManipulatorControl.SerialPortManager" Collapsed="true">
+    <Position X="8.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAEAARAAAAgABSQAAAAQAAACAAQgAAAAIA=</HashCode>
+      <FileName>ServoControl\SerialPortManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ManipulatorControl.ServoControl" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BTILgADVQKBPDSfggtEBgtxQEUElClDJmiiAjEEgZgQ=</HashCode>
+      <FileName>ServoControl\ServoControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ManipulatorControl.TaskPlanner" Collapsed="true">
+    <Position X="12.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAiCBAAwKIQQIAQAIACRAAFYLKFAhAgZAFAAIAIgIpE=</HashCode>
+      <FileName>TaskPlanner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ManipulatorControl.Properties.Resources" Collapsed="true">
+    <Position X="7" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ManipulatorControl.Properties.Settings" Collapsed="true">
+    <Position X="10.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="ManipulatorControl.ArmType" Collapsed="true">
+    <Position X="5.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Manipulator.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ManipulatorControl.ServoType" Collapsed="true">
+    <Position X="7" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACBEAAAAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>ServoControl\ServoControl.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="ManipulatorControl.ArmPositionChangedEH" Collapsed="true">
+    <Position X="7" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Manipulator.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="ManipulatorControl.ArmControlStatusChangedEH" Collapsed="true">
+    <Position X="5.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ManipulatorManager.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="ManipulatorControl.ThreeDoubleParser" Collapsed="true">
+    <Position X="14" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAQAAAA=</HashCode>
+      <FileName>ManipulatorManager.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="ManipulatorControl.SixDoubleParser" Collapsed="true">
+    <Position X="12.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAwAAAAAAAYCAAA=</HashCode>
+      <FileName>ManipulatorManager.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="ManipulatorControl.SevenDoubleParser" Collapsed="true">
+    <Position X="10.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAEAAAAAAAAAwAAAAAAAYCAAA=</HashCode>
+      <FileName>ManipulatorManager.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="ManipulatorControl.ByteArrayEventHandler" Collapsed="true">
+    <Position X="8.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ServoControl\SerialPortManager.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
