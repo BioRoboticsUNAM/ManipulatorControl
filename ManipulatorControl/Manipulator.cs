@@ -690,7 +690,7 @@ namespace ManipulatorControl
             string cmd = "v\r";
             int resp=0;
             string[] respParts;
-            volt = 0;
+            volt = 0.0;
             
             if (!SendReceiveCommandCM700(cmd, out resp, out respParts)) 
 				return false;
@@ -708,7 +708,6 @@ namespace ManipulatorControl
             }
 
             return true;
-
         }
 
 		public void GoToArticularPositionNoAnswer(double q1, double q2, double q3, double q4, double q5, double q6, double q7)
@@ -1140,7 +1139,8 @@ namespace ManipulatorControl
             string[] respParts;
             int resp = 0;
 
-            if (!SendReceiveCommandCM700(cmd, out resp, out respParts)) return false;
+            if (!SendReceiveCommandCM700(cmd, out resp, out respParts)) 
+                return false;
 
             if (resp == 0) return false;
             else return true;

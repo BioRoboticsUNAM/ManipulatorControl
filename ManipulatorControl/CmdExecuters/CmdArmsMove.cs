@@ -47,9 +47,10 @@ namespace ManipulatorControl
             //this.CommandManager.Busy = true;
 			success = this.taskPlanner.ArmsMove(command.Parameters);
 
-			if (!this.taskPlanner.MovingLeftArm && !this.taskPlanner.MovingRightArm) 
-                this.CommandManager.Busy = false;
+            if (!this.taskPlanner.MovingLeftArm && !this.taskPlanner.MovingRightArm)
+                success = false;
 
+               this.CommandManager.Busy = false;
 			return Response.CreateFromCommand(command, success);
 		}
 

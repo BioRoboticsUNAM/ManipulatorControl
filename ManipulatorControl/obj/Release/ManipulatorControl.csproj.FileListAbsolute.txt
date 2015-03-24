@@ -140,3 +140,23 @@ Z:\RoboCup\SourceCode\BetaTest\ManipulatorControl\ManipulatorControl\obj\Release
 D:\Justina Apps\Sources\Arms\ManipulatorControl\ManipulatorControl\bin\Release\ManipulatorControl.exe.config
 D:\Justina Apps\Sources\Arms\ManipulatorControl\ManipulatorControl\obj\Release\ManipulatorControl.exe
 D:\Justina Apps\Sources\Arms\ManipulatorControl\ManipulatorControl\obj\Release\ManipulatorControl.pdb
+D:\Justina Apps\Sources\Arms\ManipulatorControl\ManipulatorControl\bin\Release\ManipulatorControl.exe
+D:\Justina Apps\Sources\Arms\ManipulatorControl\ManipulatorControl\bin\Release\ManipulatorControl.pdb
+D:\Justina Apps\Sources\Arms\ManipulatorControl\ManipulatorControl\bin\Release\Robotics.dll
+D:\Justina Apps\Sources\Arms\ManipulatorControl\ManipulatorControl\bin\Release\Robotics.xml
+D:\Justina Apps\Sources\Arms\ManipulatorControl\ManipulatorControl\obj\Release\ManipulatorControl.csprojResolveAssemblyReference.cache
+D:\Justina Apps\Sources\Arms\ManipulatorControl\ManipulatorControl\obj\Release\ManipulatorControl.frmArmsControl.resources
+D:\Justina Apps\Sources\Arms\ManipulatorControl\ManipulatorControl\obj\Release\ManipulatorControl.Properties.Resources.resources
+D:\Justina Apps\Sources\Arms\ManipulatorControl\ManipulatorControl\obj\Release\ManipulatorControl.csproj.GenerateResource.Cache
+D:\ManipulatorControl\ManipulatorControl\bin\Release\ManipulatorControl.exe.config
+D:\ManipulatorControl\ManipulatorControl\obj\Release\ManipulatorControl.exe
+D:\ManipulatorControl\ManipulatorControl\obj\Release\ManipulatorControl.pdb
+D:\ManipulatorControl\ManipulatorControl\bin\Release\ManipulatorControl.exe
+D:\ManipulatorControl\ManipulatorControl\bin\Release\ManipulatorControl.pdb
+D:\ManipulatorControl\ManipulatorControl\bin\Release\Robotics.dll
+D:\ManipulatorControl\ManipulatorControl\bin\Release\Robotics.xml
+D:\ManipulatorControl\ManipulatorControl\obj\Release\ResolveAssemblyReference.cache
+D:\ManipulatorControl\ManipulatorControl\obj\Release\ManipulatorControl.frmArmsControl.resources
+D:\ManipulatorControl\ManipulatorControl\obj\Release\ManipulatorControl.Properties.Resources.resources
+D:\ManipulatorControl\ManipulatorControl\obj\Release\ResGen.read.1.tlog
+D:\ManipulatorControl\ManipulatorControl\obj\Release\ResGen.write.1.tlog

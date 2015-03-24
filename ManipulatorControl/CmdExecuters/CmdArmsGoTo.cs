@@ -36,28 +36,20 @@ namespace ManipulatorControl
 			if (!command.HasParams)
 			{
 				TextBoxStreamWriter.DefaultLog.WriteLine("Cmd ArmsGoTo: No parameters received");
-				return Response.CreateFromCommand(command, false);
+                this.CommandManager.Busy = false;
+                return Response.CreateFromCommand(command, false);
 			}
 			if (this.taskPlanner.MovingRightArm || this.taskPlanner.MovingLeftArm)
 			{
 				TextBoxStreamWriter.DefaultLog.WriteLine("Cmd ArmsGoTo: Arms busy executing another command");
-				return Response.CreateFromCommand(command, false);
+                return Response.CreateFromCommand(command, false);
 			}
 			
 			this.CommandManager.Busy = true;
-
-			if (command.Parameters == "home")
-			{
-				this.taskPlanner.LaOpenGripper(10);
-				this.taskPlanner.RaOpenGripper(10);
-			}
-
 			success = this.taskPlanner.ArmsGoToPredefPos(command.Parameters);
-
-			this.CommandManager.Busy = false;
-
+			
+            this.CommandManager.Busy = false;
 			return Response.CreateFromCommand(command, success);
-
 		}
 
 		public override void DefaultParameterParser(string[] parameters)

@@ -87,8 +87,6 @@ namespace ManipulatorControl
         public bool ArmsGoToPredefPos(string position)
         {
             bool succes = false;
-            int n = 0;
-            int maxIntentos = 3;
             double maxError = 5 * Math.PI / 180; //5°
 
             if (!this.leftPredefPos.ContainsKey(position))
@@ -103,68 +101,75 @@ namespace ManipulatorControl
                 return false;
             }
 
+            if (position == "home")
+            {
+                this.LaOpenGripper(10);
+                this.RaOpenGripper(10);
+            }
+
             PredefPosition rp = this.rightPredefPos[position];
             PredefPosition lp = this.leftPredefPos[position];
 
             Vector rv;
             Vector lv;
 
+
+            bool lSuccess = false;
+            bool rSuccess = false;
+
+            if (!armMan.status.IsLeftArmReady)
+            {
+                TextBoxStreamWriter.DefaultLog.WriteLine("TaskPlanner: LeftArm is NOT READY");
+                return false;
+            }
+            if (!armMan.status.IsRightArmReady)
+            {
+                TextBoxStreamWriter.DefaultLog.WriteLine("TaskPlanner: RightARM is NOT READY");
+                return false;
+            }
+
             movingLeftArm = true;
             movingRightArm = true;
 
-			bool lSuccess = false;
-			bool rSuccess = false; 
+            this.leftArm.GoToArticularPositionNoAnswer(lp.Q1, lp.Q2, lp.Q3, lp.Q4, lp.Q5, lp.Q6, lp.Q7);
+            this.rightArm.GoToArticularPositionNoAnswer(rp.Q1, rp.Q2, rp.Q3, rp.Q4, rp.Q5, rp.Q6, rp.Q7);
 
-            do
+            Thread.Sleep(3000); //Tiempo de espera para alcanzar cada posición
+
+            lv = this.leftArm.GetPositionArticular();
+            lSuccess =
+                (Math.Abs(lv[0] - lp.Q1) < maxError) &&
+                (Math.Abs(lv[1] - lp.Q2) < maxError) &&
+                (Math.Abs(lv[2] - lp.Q3) < maxError) &&
+                (Math.Abs(lv[3] - lp.Q4) < maxError) &&
+                (Math.Abs(lv[4] - lp.Q5) < maxError) &&
+                (Math.Abs(lv[5] - lp.Q6) < maxError);
+
+
+            rv = this.rightArm.GetPositionArticular();
+            rSuccess =
+                (Math.Abs(rv[0] - rp.Q1) < maxError) &&
+                (Math.Abs(rv[1] - rp.Q2) < maxError) &&
+                (Math.Abs(rv[2] - rp.Q3) < maxError) &&
+                (Math.Abs(rv[3] - rp.Q4) < maxError) &&
+                (Math.Abs(rv[4] - rp.Q5) < maxError) &&
+                (Math.Abs(rv[5] - rp.Q6) < maxError);
+
+            succes = lSuccess && rSuccess;
+
+            if (succes)
+                TextBoxStreamWriter.DefaultLog.WriteLine("Both arms reached predefined potition " + succes.ToString());
+            else
             {
-				if( armMan.status.IsLeftArmReady)
-					this.leftArm.GoToArticularPositionNoAnswer (lp.Q1, lp.Q2, lp.Q3, lp.Q4, lp.Q5, lp.Q6, lp.Q7);
-				
-				if (armMan.status.IsRightArmReady)
-					this.rightArm.GoToArticularPositionNoAnswer(rp.Q1, rp.Q2, rp.Q3, rp.Q4, rp.Q5, rp.Q6, rp.Q7);
-                
-                Thread.Sleep(3000); //Tiempo de espera para alcanzar cada posición
+                if (!lSuccess)
+                    TextBoxStreamWriter.DefaultLog.WriteLine("Left arm not reached pp");
+                if (!rSuccess)
+                    TextBoxStreamWriter.DefaultLog.WriteLine("Right arm not reached pp");
+            }
 
-				if (armMan.status.IsLeftArmReady)
-				{
-					lv = this.leftArm.GetPositionArticular();
-					lSuccess =
-						(Math.Abs(lv[0] - lp.Q1) < maxError) &&
-						(Math.Abs(lv[1] - lp.Q2) < maxError) &&
-						(Math.Abs(lv[2] - lp.Q3) < maxError) &&
-						(Math.Abs(lv[3] - lp.Q4) < maxError) &&
-						(Math.Abs(lv[4] - lp.Q5) < maxError) &&
-						(Math.Abs(lv[5] - lp.Q6) < maxError);
-				}
-
-				if (armMan.status.IsRightArmReady)
-				{
-					rv = this.rightArm.GetPositionArticular();
-					rSuccess =
-						(Math.Abs(rv[0] - rp.Q1) < maxError) &&
-						(Math.Abs(rv[1] - rp.Q2) < maxError) &&
-						(Math.Abs(rv[2] - rp.Q3) < maxError) &&
-						(Math.Abs(rv[3] - rp.Q4) < maxError) &&
-						(Math.Abs(rv[4] - rp.Q5) < maxError) &&
-						(Math.Abs(rv[5] - rp.Q6) < maxError);
-				}
-
-				if (armMan.status.LeftArmEnable && armMan.status.RightArmEnabled)
-					succes = lSuccess && rSuccess;
-				else if (armMan.status.IsLeftArmReady)
-					succes = lSuccess;
-				else if (armMan.status.IsRightArmReady)
-					succes = rSuccess;
-				else
-					succes = false;
-
-				n++;
-            } while (!succes && !(n >= maxIntentos));
-
-			movingRightArm = false;
+            movingRightArm = false;
             movingLeftArm = false;
 
-            TextBoxStreamWriter.DefaultLog.WriteLine("Both arms reached predefined potition " + succes.ToString());
             return succes;
         }
 
@@ -525,10 +530,11 @@ namespace ManipulatorControl
         {
             bool succes;
             this.movingLeftArm = true;
-            if (!this.UseLaHand)
-                succes = this.leftArm.OpenGripper(percentage);
-            else
+            if (this.UseLaHand)
                 succes = this.leftArm.MoveHand(100, 100, 100, 100);
+            else
+                succes = this.leftArm.OpenGripper(percentage);
+                
             this.movingLeftArm = false;
             return succes;
         }

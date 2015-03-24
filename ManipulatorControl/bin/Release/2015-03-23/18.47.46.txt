@@ -1,0 +1,97 @@
+
+
+3/23/2015 6:47:46 PM
+ == 
+LastBuild: 3/23/2015 6:47:46 PM
+ == 
+Invalid servo angles: Out of servo range
+baila1: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+baila2: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+Invalid servo angles: Out of servo range
+heilHitler: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+highdeliver: Invalid Z value. Out of work space
+Invalid servo angles: Out of servo range
+highdeliver1: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+highdeliver1: Invalid Z value. Out of work space
+Invalid servo angles: Out of servo range
+hipno: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+hipno: Invalid Roll value. Out of work space
+Invalid servo angles: Out of servo range
+hipnol: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+hipnol: Invalid Roll value. Out of work space
+Invalid servo angles: Out of servo range
+hipnor: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+hipnor: Invalid Roll value. Out of work space
+Invalid servo angles: Out of servo range
+left_top: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+showA: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+showArm: Invalid Z value. Out of work space
+Invalid servo angles: Out of servo range
+showC: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+showChestKinect: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+showHead: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+showHeadKinect: Invalid Pitch value. Out of work space
+Invalid servo angles: Out of servo range
+showKinect: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+showLaser: Invalid Pitch value. Out of work space
+Invalid servo angles: Out of servo range
+showM: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+showW: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+clean1: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+clean1: Invalid Z value. Out of work space
+Invalid servo angles: Out of servo range
+clean1: Invalid Pitch value. Out of work space
+Invalid servo angles: Out of servo range
+dance1: Invalid X value. Out of work space
+Invalid servo angles: Out of servo range
+deliver: Invalid X value. Out of work space
+Invalid servo angles: Out of servo range
+deliver: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+deliver: Invalid Z value. Out of work space
+Invalid servo angles: Out of servo range
+deliverB: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+entrenamiento2: Invalid X value. Out of work space
+Invalid servo angles: Out of servo range
+entrenamiento2: Invalid Z value. Out of work space
+Invalid servo angles: Out of servo range
+entrenamiento2: Invalid Yaw value. Out of work space
+Invalid servo angles: Out of servo range
+escort: Invalid Z value. Out of work space
+Invalid servo angles: Out of servo range
+heilHitler: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+hipno: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+hipno: Invalid Roll value. Out of work space
+Invalid servo angles: Out of servo range
+hipnol: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+hipnol: Invalid Roll value. Out of work space
+Invalid servo angles: Out of servo range
+hipnor: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+hipnor: Invalid Roll value. Out of work space
+Invalid servo angles: Out of servo range
+right_bottom: Invalid X value. Out of work space
+Invalid servo angles: Out of servo range
+right_bottom: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+right_top: Invalid Y value. Out of wor

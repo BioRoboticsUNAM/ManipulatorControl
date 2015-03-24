@@ -87,11 +87,12 @@
             this.txtConsole.BackColor = System.Drawing.Color.Black;
             this.txtConsole.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtConsole.ForeColor = System.Drawing.Color.LimeGreen;
-            this.txtConsole.Location = new System.Drawing.Point(3, 3);
+            this.txtConsole.Location = new System.Drawing.Point(4, 4);
+            this.txtConsole.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtConsole.Multiline = true;
             this.txtConsole.Name = "txtConsole";
             this.txtConsole.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtConsole.Size = new System.Drawing.Size(580, 347);
+            this.txtConsole.Size = new System.Drawing.Size(776, 429);
             this.txtConsole.TabIndex = 0;
             // 
             // mainMenuStrip
@@ -100,14 +101,15 @@
             this.fileToolStripMenuItem});
             this.mainMenuStrip.Location = new System.Drawing.Point(0, 0);
             this.mainMenuStrip.Name = "mainMenuStrip";
-            this.mainMenuStrip.Size = new System.Drawing.Size(594, 24);
+            this.mainMenuStrip.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.mainMenuStrip.Size = new System.Drawing.Size(792, 28);
             this.mainMenuStrip.TabIndex = 1;
             this.mainMenuStrip.Text = "menuStrip1";
             // 
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(44, 24);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // mainToolStrip
@@ -119,9 +121,9 @@
             this.toolStripLabel3,
             this.lblRAV,
             this.lblAlert});
-            this.mainToolStrip.Location = new System.Drawing.Point(0, 24);
+            this.mainToolStrip.Location = new System.Drawing.Point(0, 28);
             this.mainToolStrip.Name = "mainToolStrip";
-            this.mainToolStrip.Size = new System.Drawing.Size(594, 25);
+            this.mainToolStrip.Size = new System.Drawing.Size(792, 25);
             this.mainToolStrip.TabIndex = 2;
             this.mainToolStrip.Text = "toolStrip1";
             // 
@@ -139,35 +141,35 @@
             // toolStripLabel1
             // 
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(30, 22);
+            this.toolStripLabel1.Size = new System.Drawing.Size(36, 22);
             this.toolStripLabel1.Text = "LAv:";
             // 
             // lblLAV
             // 
             this.lblLAV.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLAV.Name = "lblLAV";
-            this.lblLAV.Size = new System.Drawing.Size(14, 22);
-            this.lblLAV.Text = "0";
+            this.lblLAV.Size = new System.Drawing.Size(30, 22);
+            this.lblLAV.Text = "???";
             // 
             // toolStripLabel3
             // 
             this.toolStripLabel3.Name = "toolStripLabel3";
-            this.toolStripLabel3.Size = new System.Drawing.Size(31, 22);
+            this.toolStripLabel3.Size = new System.Drawing.Size(38, 22);
             this.toolStripLabel3.Text = "RAv:";
             // 
             // lblRAV
             // 
             this.lblRAV.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRAV.Name = "lblRAV";
-            this.lblRAV.Size = new System.Drawing.Size(14, 22);
-            this.lblRAV.Text = "0";
+            this.lblRAV.Size = new System.Drawing.Size(30, 22);
+            this.lblRAV.Text = "???";
             // 
             // lblAlert
             // 
             this.lblAlert.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAlert.ForeColor = System.Drawing.Color.Red;
             this.lblAlert.Name = "lblAlert";
-            this.lblAlert.Size = new System.Drawing.Size(144, 22);
+            this.lblAlert.Size = new System.Drawing.Size(178, 25);
             this.lblAlert.Text = "LOW BATTERY [!!!]";
             this.lblAlert.Visible = false;
             // 
@@ -175,19 +177,21 @@
             // 
             this.tabControl.Controls.Add(this.tabConsole);
             this.tabControl.Controls.Add(this.tabPosAndMovs);
-            this.tabControl.Location = new System.Drawing.Point(0, 52);
+            this.tabControl.Location = new System.Drawing.Point(0, 64);
+            this.tabControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(594, 379);
+            this.tabControl.Size = new System.Drawing.Size(792, 466);
             this.tabControl.TabIndex = 3;
             // 
             // tabConsole
             // 
             this.tabConsole.Controls.Add(this.txtConsole);
-            this.tabConsole.Location = new System.Drawing.Point(4, 22);
+            this.tabConsole.Location = new System.Drawing.Point(4, 25);
+            this.tabConsole.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabConsole.Name = "tabConsole";
-            this.tabConsole.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabConsole.Size = new System.Drawing.Size(586, 353);
+            this.tabConsole.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabConsole.Size = new System.Drawing.Size(784, 437);
             this.tabConsole.TabIndex = 1;
             this.tabConsole.Text = "Console";
             this.tabConsole.UseVisualStyleBackColor = true;
@@ -197,10 +201,11 @@
             this.tabPosAndMovs.Controls.Add(this.gbPredefRightArm);
             this.tabPosAndMovs.Controls.Add(this.pgMain);
             this.tabPosAndMovs.Controls.Add(this.gbPredefLeftArm);
-            this.tabPosAndMovs.Location = new System.Drawing.Point(4, 22);
+            this.tabPosAndMovs.Location = new System.Drawing.Point(4, 25);
+            this.tabPosAndMovs.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPosAndMovs.Name = "tabPosAndMovs";
-            this.tabPosAndMovs.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPosAndMovs.Size = new System.Drawing.Size(586, 353);
+            this.tabPosAndMovs.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPosAndMovs.Size = new System.Drawing.Size(784, 437);
             this.tabPosAndMovs.TabIndex = 0;
             this.tabPosAndMovs.Text = "Pos and  Movs";
             this.tabPosAndMovs.UseVisualStyleBackColor = true;
@@ -209,9 +214,11 @@
             // 
             this.gbPredefRightArm.Controls.Add(this.lbRightPredefMovs);
             this.gbPredefRightArm.Controls.Add(this.lbRightPredefPos);
-            this.gbPredefRightArm.Location = new System.Drawing.Point(141, 6);
+            this.gbPredefRightArm.Location = new System.Drawing.Point(188, 7);
+            this.gbPredefRightArm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gbPredefRightArm.Name = "gbPredefRightArm";
-            this.gbPredefRightArm.Size = new System.Drawing.Size(135, 341);
+            this.gbPredefRightArm.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbPredefRightArm.Size = new System.Drawing.Size(180, 420);
             this.gbPredefRightArm.TabIndex = 0;
             this.gbPredefRightArm.TabStop = false;
             this.gbPredefRightArm.Text = "Right Arm";
@@ -219,18 +226,22 @@
             // lbRightPredefMovs
             // 
             this.lbRightPredefMovs.FormattingEnabled = true;
-            this.lbRightPredefMovs.Location = new System.Drawing.Point(6, 172);
+            this.lbRightPredefMovs.ItemHeight = 16;
+            this.lbRightPredefMovs.Location = new System.Drawing.Point(8, 212);
+            this.lbRightPredefMovs.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lbRightPredefMovs.Name = "lbRightPredefMovs";
-            this.lbRightPredefMovs.Size = new System.Drawing.Size(121, 160);
+            this.lbRightPredefMovs.Size = new System.Drawing.Size(160, 196);
             this.lbRightPredefMovs.TabIndex = 1;
             // 
             // lbRightPredefPos
             // 
             this.lbRightPredefPos.ContextMenuStrip = this.cmsRightPredefPos;
             this.lbRightPredefPos.FormattingEnabled = true;
-            this.lbRightPredefPos.Location = new System.Drawing.Point(6, 19);
+            this.lbRightPredefPos.ItemHeight = 16;
+            this.lbRightPredefPos.Location = new System.Drawing.Point(8, 23);
+            this.lbRightPredefPos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lbRightPredefPos.Name = "lbRightPredefPos";
-            this.lbRightPredefPos.Size = new System.Drawing.Size(121, 147);
+            this.lbRightPredefPos.Size = new System.Drawing.Size(160, 180);
             this.lbRightPredefPos.TabIndex = 1;
             this.lbRightPredefPos.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbRightPredefPos_MouseDoubleClick);
             // 
@@ -266,9 +277,10 @@
             // 
             // pgMain
             // 
-            this.pgMain.Location = new System.Drawing.Point(366, 0);
+            this.pgMain.Location = new System.Drawing.Point(488, 0);
+            this.pgMain.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pgMain.Name = "pgMain";
-            this.pgMain.Size = new System.Drawing.Size(220, 353);
+            this.pgMain.Size = new System.Drawing.Size(293, 434);
             this.pgMain.TabIndex = 4;
             this.pgMain.ToolbarVisible = false;
             // 
@@ -276,9 +288,11 @@
             // 
             this.gbPredefLeftArm.Controls.Add(this.lbLeftPredefMovs);
             this.gbPredefLeftArm.Controls.Add(this.lbLeftPredefPos);
-            this.gbPredefLeftArm.Location = new System.Drawing.Point(3, 6);
+            this.gbPredefLeftArm.Location = new System.Drawing.Point(4, 7);
+            this.gbPredefLeftArm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gbPredefLeftArm.Name = "gbPredefLeftArm";
-            this.gbPredefLeftArm.Size = new System.Drawing.Size(132, 341);
+            this.gbPredefLeftArm.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbPredefLeftArm.Size = new System.Drawing.Size(176, 420);
             this.gbPredefLeftArm.TabIndex = 0;
             this.gbPredefLeftArm.TabStop = false;
             this.gbPredefLeftArm.Text = "Left Arm";
@@ -286,18 +300,22 @@
             // lbLeftPredefMovs
             // 
             this.lbLeftPredefMovs.FormattingEnabled = true;
-            this.lbLeftPredefMovs.Location = new System.Drawing.Point(6, 172);
+            this.lbLeftPredefMovs.ItemHeight = 16;
+            this.lbLeftPredefMovs.Location = new System.Drawing.Point(8, 212);
+            this.lbLeftPredefMovs.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lbLeftPredefMovs.Name = "lbLeftPredefMovs";
-            this.lbLeftPredefMovs.Size = new System.Drawing.Size(120, 160);
+            this.lbLeftPredefMovs.Size = new System.Drawing.Size(159, 196);
             this.lbLeftPredefMovs.TabIndex = 2;
             // 
             // lbLeftPredefPos
             // 
             this.lbLeftPredefPos.ContextMenuStrip = this.cmsLeftPredefPos;
             this.lbLeftPredefPos.FormattingEnabled = true;
-            this.lbLeftPredefPos.Location = new System.Drawing.Point(6, 19);
+            this.lbLeftPredefPos.ItemHeight = 16;
+            this.lbLeftPredefPos.Location = new System.Drawing.Point(8, 23);
+            this.lbLeftPredefPos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lbLeftPredefPos.Name = "lbLeftPredefPos";
-            this.lbLeftPredefPos.Size = new System.Drawing.Size(120, 147);
+            this.lbLeftPredefPos.Size = new System.Drawing.Size(159, 180);
             this.lbLeftPredefPos.TabIndex = 1;
             this.lbLeftPredefPos.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbLeftPredefPos_MouseDoubleClick);
             // 
@@ -340,54 +358,56 @@
             this.lblRightArmStatus,
             this.lblLeftComPort,
             this.lblRightComPort});
-            this.mainStatusStrip.Location = new System.Drawing.Point(0, 428);
+            this.mainStatusStrip.Location = new System.Drawing.Point(0, 529);
             this.mainStatusStrip.Name = "mainStatusStrip";
-            this.mainStatusStrip.Size = new System.Drawing.Size(594, 22);
+            this.mainStatusStrip.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
+            this.mainStatusStrip.Size = new System.Drawing.Size(792, 25);
             this.mainStatusStrip.TabIndex = 5;
             this.mainStatusStrip.Text = "statusStrip1";
             // 
             // lblGeneralStatus
             // 
             this.lblGeneralStatus.Name = "lblGeneralStatus";
-            this.lblGeneralStatus.Size = new System.Drawing.Size(117, 17);
+            this.lblGeneralStatus.Size = new System.Drawing.Size(146, 20);
             this.lblGeneralStatus.Text = "SYSTEM NOT READY";
             // 
             // lblCnnStatus
             // 
             this.lblCnnStatus.Name = "lblCnnStatus";
-            this.lblCnnStatus.Size = new System.Drawing.Size(122, 17);
+            this.lblCnnStatus.Size = new System.Drawing.Size(153, 20);
             this.lblCnnStatus.Text = "| BB: No Connected   |";
             // 
             // lblLeftArmStatus
             // 
             this.lblLeftArmStatus.Name = "lblLeftArmStatus";
-            this.lblLeftArmStatus.Size = new System.Drawing.Size(94, 17);
+            this.lblLeftArmStatus.Size = new System.Drawing.Size(119, 20);
             this.lblLeftArmStatus.Text = "LA: Not Ready   |";
             // 
             // lblRightArmStatus
             // 
             this.lblRightArmStatus.Name = "lblRightArmStatus";
-            this.lblRightArmStatus.Size = new System.Drawing.Size(95, 17);
+            this.lblRightArmStatus.Size = new System.Drawing.Size(121, 20);
             this.lblRightArmStatus.Text = "RA: Not Ready   |";
             // 
             // lblLeftComPort
             // 
             this.lblLeftComPort.Name = "lblLeftComPort";
-            this.lblLeftComPort.Size = new System.Drawing.Size(73, 17);
+            this.lblLeftComPort.Size = new System.Drawing.Size(90, 20);
             this.lblLeftComPort.Text = "LA: COM1   |";
             // 
             // lblRightComPort
             // 
             this.lblRightComPort.Name = "lblRightComPort";
-            this.lblRightComPort.Size = new System.Drawing.Size(74, 17);
+            this.lblRightComPort.Size = new System.Drawing.Size(92, 20);
             this.lblRightComPort.Text = "RA: COM2   |";
             // 
             // cbTorque
             // 
             this.cbTorque.AutoSize = true;
-            this.cbTorque.Location = new System.Drawing.Point(494, 29);
+            this.cbTorque.Location = new System.Drawing.Point(659, 36);
+            this.cbTorque.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbTorque.Name = "cbTorque";
-            this.cbTorque.Size = new System.Drawing.Size(96, 17);
+            this.cbTorque.Size = new System.Drawing.Size(122, 21);
             this.cbTorque.TabIndex = 6;
             this.cbTorque.Text = "Torque On/Off";
             this.cbTorque.UseVisualStyleBackColor = true;
@@ -403,9 +423,10 @@
             // 
             this.chb_useLaHand.AutoSize = true;
             this.chb_useLaHand.Enabled = false;
-            this.chb_useLaHand.Location = new System.Drawing.Point(384, 29);
+            this.chb_useLaHand.Location = new System.Drawing.Point(512, 36);
+            this.chb_useLaHand.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chb_useLaHand.Name = "chb_useLaHand";
-            this.chb_useLaHand.Size = new System.Drawing.Size(86, 17);
+            this.chb_useLaHand.Size = new System.Drawing.Size(109, 21);
             this.chb_useLaHand.TabIndex = 1;
             this.chb_useLaHand.Text = "Use LaHand";
             this.chb_useLaHand.UseVisualStyleBackColor = true;
@@ -414,9 +435,10 @@
             // chb_useRaHand
             // 
             this.chb_useRaHand.AutoSize = true;
-            this.chb_useRaHand.Location = new System.Drawing.Point(290, 29);
+            this.chb_useRaHand.Location = new System.Drawing.Point(387, 36);
+            this.chb_useRaHand.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chb_useRaHand.Name = "chb_useRaHand";
-            this.chb_useRaHand.Size = new System.Drawing.Size(88, 17);
+            this.chb_useRaHand.Size = new System.Drawing.Size(111, 21);
             this.chb_useRaHand.TabIndex = 12;
             this.chb_useRaHand.Text = "Use RaHand";
             this.chb_useRaHand.UseVisualStyleBackColor = true;
@@ -424,9 +446,9 @@
             // 
             // frmArmsControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(594, 450);
+            this.ClientSize = new System.Drawing.Size(792, 554);
             this.Controls.Add(this.cbTorque);
             this.Controls.Add(this.mainStatusStrip);
             this.Controls.Add(this.chb_useRaHand);
@@ -436,8 +458,9 @@
             this.Controls.Add(this.mainMenuStrip);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.mainMenuStrip;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmArmsControl";
-            this.Text = "ARMS 100814";
+            this.Text = "ARMS";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmArmsControl_FormClosing);
             this.Load += new System.EventHandler(this.frmArmsControl_Load);
             this.mainMenuStrip.ResumeLayout(false);

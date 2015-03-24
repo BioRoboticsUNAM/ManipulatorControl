@@ -1,0 +1,153 @@
+
+
+3/23/2015 7:02:31 PM
+ == 
+LastBuild: 3/23/2015 7:02:30 PM
+ == 
+Invalid servo angles: Out of servo range
+baila1: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+baila2: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+deliver: Invalid X value. Out of work space
+Invalid servo angles: Out of servo range
+deliver: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+deliver: Invalid Roll value. Out of work space
+Invalid servo angles: Out of servo range
+deliverB: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+escort: Invalid Z value. Out of work space
+Invalid servo angles: Out of servo range
+extended: Invalid Z value. Out of work space
+Invalid servo angles: Out of servo range
+heilHitler: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+highdeliver: Invalid Z value. Out of work space
+Invalid servo angles: Out of servo range
+highdeliver1: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+highdeliver1: Invalid Z value. Out of work space
+Invalid servo angles: Out of servo range
+hipno: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+hipno: Invalid Roll value. Out of work space
+Invalid servo angles: Out of servo range
+hipnol: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+hipnol: Invalid Roll value. Out of work space
+Invalid servo angles: Out of servo range
+hipnor: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+hipnor: Invalid Roll value. Out of work space
+Invalid servo angles: Out of servo range
+left_top: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+showA: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+showArm: Invalid Z value. Out of work space
+Invalid servo angles: Out of servo range
+showC: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+showChestKinect: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+showHead: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+showHeadKinect: Invalid Pitch value. Out of work space
+Invalid servo angles: Out of servo range
+showKinect: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+showLaser: Invalid Pitch value. Out of work space
+Invalid servo angles: Out of servo range
+showM: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+showW: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+clean1: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+clean1: Invalid Z value. Out of work space
+Invalid servo angles: Out of servo range
+clean1: Invalid Pitch value. Out of work space
+Invalid servo angles: Out of servo range
+dance1: Invalid X value. Out of work space
+Invalid servo angles: Out of servo range
+deliver: Invalid X value. Out of work space
+Invalid servo angles: Out of servo range
+deliver: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+deliver: Invalid Z value. Out of work space
+Invalid servo angles: Out of servo range
+deliverB: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+entrenamiento2: Invalid X value. Out of work space
+Invalid servo angles: Out of servo range
+entrenamiento2: Invalid Z value. Out of work space
+Invalid servo angles: Out of servo range
+entrenamiento2: Invalid Yaw value. Out of work space
+Invalid servo angles: Out of servo range
+escort: Invalid Z value. Out of work space
+Invalid servo angles: Out of servo range
+heilHitler: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+hipno: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+hipno: Invalid Roll value. Out of work space
+Invalid servo angles: Out of servo range
+hipnol: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+hipnol: Invalid Roll value. Out of work space
+Invalid servo angles: Out of servo range
+hipnor: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+hipnor: Invalid Roll value. Out of work space
+Invalid servo angles: Out of servo range
+right_bottom: Invalid X value. Out of work space
+Invalid servo angles: Out of servo range
+right_bottom: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+right_top: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+showC: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+showHead: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+showHeadKinect: Invalid Pitch value. Out of work space
+Invalid servo angles: Out of servo range
+showM: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+showW: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+test1: Invalid X value. Out of work space
+Invalid servo angles: Out of servo range
+test1: Invalid Y value. Out of work space
+Invalid servo angles: Out of servo range
+dance1: Invalid X value. Out of work space
+Invalid servo angles: Out of servo range
+dance1: Invalid X value. Out of work space
+LeftArm: Trying to reach articular position: { 0.0000, 0.0000, 0.0000, 0.0000, 0.0000, 0.0000, 0.0000 }
+Client Connected
+LeftArm: Position reached
+RightArm: Trying to reach articular position: { 0.0000, 0.0000, 0.0000, 0.0000, 0.0000, 0.0000, 0.0000 }
+Cmd ArmsGoTo: Received: arms_goto "deliver"
+TaskPlanner: RightARM is NOT READY
+RightArm: Position reached
+Cmd ArmsGoTo: Received: arms_goto "deliver"
+LeftArm: Trying to reach articular position: { 0.1450, 0.0345, 0.5502, 1.4725, -0.0026, 0.0128, -0.0845 }
+RightArm: Trying to reach articular position: { 0.0999, 0.0420, -0.4837, 1.5816, 0.0669, -0.0282, 0.1356 }
+Both arms reached predefined potition True
+Cmd ArmsGoTo: Received: arms_goto "deliver"
+LeftArm: Trying to reach articular position: { 0.1450, 0.0345, 0.5502, 1.4725, -0.0026, 0.0128, -0.0845 }
+RightArm: Trying to reach articular position: { 0.0999, 0.0420, -0.4837, 1.5816, 0.0669, -0.0282, 0.1356 }
+Both arms reached predefined potition True
+Cmd ArmsGoTo: Received: arms_goto "home"
+LeftArm: Trying to reach articular position: { 0.0000, 0.0000, 0.0000, 0.0000, 0.0000, 0.0000, 0.0000 }
+RightArm: Trying to reach articular position: { -0.1623, 0.0000, 0.0000, 0.4291, 0.0000, -0.2667, 0.0000 }
+Both arms reached predefined potition True
+Cmd ArmsGoTo: Received: arms_goto "deliver"
+LeftArm: Trying to reach articular position: { 0.1450, 0.0345, 0.5502, 1.4725, -0.0026, 0.0128, -0.0845 }
+RightArm: Trying to reach articular position: { 0.0999, 0.0420, -0.4837, 1.5816, 0.0669, -0.0282, 0.1356 }
+Both arms reached predefined potition True
+Cmd ArmsGoTo: Received: arms_goto "home"
+LeftArm: Trying to reach articular position: { 0.0000, 0.0000, 0.0000, 0.0000, 0.0000, 0.0000, 0.0000 }
+RightArm: Trying to reach articular position: { -0.1623, 0.0000, 0.0000, 0.4291, 0.0000, -0.2667, 0.0000 }
+Both arms reached predefined potition True

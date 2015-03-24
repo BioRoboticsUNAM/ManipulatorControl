@@ -52,7 +52,13 @@ namespace ManipulatorControl
 
         private void frmArmsControl_Load(object sender, EventArgs e)
         {
-			TextBoxStreamWriter.DefaultLog.WriteLine("Compiled 11.06.12 1:44 a.m."); 
+            string lastCompilation = "LastBuild: " + File.GetLastWriteTime(System.Reflection.Assembly.GetExecutingAssembly().Location).ToString("G");
+
+            TextBoxStreamWriter.DefaultLog.WriteLine(" == "); 
+            TextBoxStreamWriter.DefaultLog.WriteLine( lastCompilation);
+            TextBoxStreamWriter.DefaultLog.WriteLine(" == ");
+
+            this.Text = "ARMS - " + lastCompilation; 
 
             this.lbLeftPredefPos.SelectedIndexChanged+=new EventHandler(this.listBox_Click);
             this.lbRightPredefPos.SelectedIndexChanged += new EventHandler(this.listBox_Click);
@@ -68,6 +74,9 @@ namespace ManipulatorControl
 
         private void frmArmsControl_FormClosing(object sender, FormClosingEventArgs e)
         {
+            //this.armsMan.LeftArm.TorqueOnOff( false);
+            //this.armsMan.RightArm.TorqueOnOff(false);
+
             if (this.armsMan != null) 
                 this.armsMan.StopAllSystems();
         }
@@ -441,16 +450,20 @@ namespace ManipulatorControl
         private void tmBat_Tick(object sender, EventArgs e)
         {
             double LAv = 0, RAv = 0;
-            if (!this.armsMan.taskPlanner.ArmsGetVoltage(out LAv, out RAv)) 
-				return;
-
-            this.lblLAV.Text = LAv.ToString();
-            this.lblLAV.ForeColor = LAv <= 16.0 ? Color.Red : Color.Black;
-            this.lblRAV.Text = RAv.ToString();
-            this.lblRAV.ForeColor = RAv <= 16.0 ? Color.Red : Color.Black;
-            this.lblAlert.Visible = (RAv <= 16.0) || (LAv <= 16.0);
+            if (!this.armsMan.taskPlanner.ArmsGetVoltage(out LAv, out RAv))
+            {
+                LAv = -1.0;
+                RAv = -1.0;
+            }
 
 
+            this.lblLAV.Text = (LAv <= 0) ? "???" : LAv.ToString();
+            this.lblLAV.ForeColor = (LAv <= 16.0 && LAv > 0) ? Color.Red : Color.Black;
+
+            this.lblRAV.Text = (RAv <= 0) ? "???" : RAv.ToString(); 
+            this.lblRAV.ForeColor = (RAv <= 16.0 && RAv > 0) ? Color.Red : Color.Black;
+            
+            this.lblAlert.Visible = (RAv <= 16.0 && RAv > 0) || (LAv <= 16.0 && LAv > 0);
         }
 
         #endregion

@@ -4,7 +4,8 @@
     <StartArguments>-lp COM6 -rp COM5</StartArguments>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <StartArguments>-lp COM9 -rp COM5</StartArguments>
+    <StartArguments>
+    </StartArguments>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
     <StartArguments>-lp COM6 -rp COM5</StartArguments>
